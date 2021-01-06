@@ -223,27 +223,27 @@ login(){
 
 
 ## 引入插件
- "antd": "^3.26.14",                    ui架子
- "axios": "^0.18.0",                    ajax
- "babel-polyfill": "~6.26.0",           格式化
- "draft-js": "^0.10.3",                 编辑器
- "echarts": "^4.0.2",                   图形
- "esri-loader": "0.3.1",                加载模块
- "immutable": "~3.8.1",                 不可变数据集合
- "isomorphic-fetch": "~2.2.1",          请求数据
- "moment": "~2.20.1",                   时间格式
- "rc-queue-anim": "^1.4.1",             动画库
- "rc-tween-one": "~1.7.3",              动画库
- "react": "^16.0.0",                    react
- "react-copy-to-clipboard": "~5.0.1",   复制内容到剪贴板
- "react-router": "3.2.0",               路由
- "react-router-redux": "~4.0.5",        保持路由器与应用程序状态同步
-  "react-dom": "^16.0.0",               存储
- "react-redux": "~5.0.6",               存储
- "redux": "~3.7.2",                     存储
- "redux-actions": "~2.2.1",             存储
- "redux-thunk": "~2.2.0",               存储计算
- "webpack": "~3.10.0 
+ #### "antd": "^3.26.14",                    ui架子
+ #### "axios": "^0.18.0",                    ajax
+ #### "babel-polyfill": "~6.26.0",           格式化
+ #### "draft-js": "^0.10.3",                 编辑器
+ #### "echarts": "^4.0.2",                   图形
+ #### "esri-loader": "0.3.1",                加载模块
+ #### "immutable": "~3.8.1",                 不可变数据集合
+ #### "isomorphic-fetch": "~2.2.1",          请求数据
+ #### "moment": "~2.20.1",                   时间格式
+ #### "rc-queue-anim": "^1.4.1",             动画库
+ #### "rc-tween-one": "~1.7.3",              动画库
+ #### "react": "^16.0.0",                    react
+ #### "react-copy-to-clipboard": "~5.0.1",   复制内容到剪贴板
+ #### "react-router": "3.2.0",               路由
+ #### "react-router-redux": "~4.0.5",        保持路由器与应用程序状态同步
+ ####  "react-dom": "^16.0.0",               存储
+ #### "react-redux": "~5.0.6",               存储
+ #### "redux": "~3.7.2",                     存储
+ #### "redux-actions": "~2.2.1",             存储
+ #### "redux-thunk": "~2.2.0",               存储计算
+ #### "webpack": "~3.10.0 
 
 ## 路由
 ### 1.路由模式 history
