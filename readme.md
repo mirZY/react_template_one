@@ -246,46 +246,46 @@ login(){
  "webpack": "~3.10.0 
 
 ## 路由
-1.路由模式 history
-2./ 是app主页 子路由(/desk$/index,/echarts,/editor,/chat)
+### 1.路由模式 history
+### 2./ 是app主页 子路由(/desk$/index,/echarts,/editor,/chat)
   <Route path="/" component={base.app} onEnter={isLogin}> onEnter验证 是否有token 没有返回login
   <IndexRoute component={base.welcome} /> 主页面的首页
   component 是基础路径   getComponent 不在基础路径下，通过require引入
 
 ## 接口
-模式 path+prefix+接口  option(域名)
+### 模式 path+prefix+接口  option(域名)
 
 ## redux
-创建 createAjaxAction(api,请求,响应)
-actions common 引用并调用createAjaxAction
-reducers common 'request login' 'receive login'调用
+### 创建 createAjaxAction(api,请求,响应)
+### actions common 引用并调用createAjaxAction
+### reducers common 'request login' 'receive login'调用
 
 ## 入口app.js
-Header  头部
-弹窗(修改密码 退出)
-formItemLayout = {
+### Header  头部
+### 弹窗(修改密码 退出)
+### formItemLayout = {
       labelCol: { span: 6 },
       wrapperCol: { span: 12 },
       hasFeedback: true,
 } 设置样式
-visible={this.props.visible} 弹出
-onCancel={this.props.onCancel} 关闭
-footer={this.renderFooter()} 底部 取消和确定
-{ validator: this.checkPassword } 触发checkPassword函数
-{ validator: this.checkConfirm }  触发checkConfirm函数
+### visible={this.props.visible} 弹出
+### onCancel={this.props.onCancel} 关闭
+### footer={this.renderFooter()} 底部 取消和确定
+### { validator: this.checkPassword } 触发checkPassword函数
+### { validator: this.checkConfirm }  触发checkConfirm函数
 
-LeftNav 侧边栏 
-Menu组件：
+## LeftNav 侧边栏 
+### Menu组件：
        theme	        主题颜色
        openKeys       当前展开的 SubMenu 菜单项 key 数组 默认为subNaN 全都合并
        onOpenChange   SubMenu 展开/关闭的回调
-children 内容页
-默认配置：
+## children 内容页
+### 默认配置：
         isIframe         是否隐藏头部
         idRenderChild    是否加载子组件
         isHideNav        是否隐藏左侧菜单
         isLeftNavMini    左侧导航菜单是否mini模式
-流程走向：
+### 流程走向：
       1.拿到路由
       2.得到subNaN
       3.左侧菜单高亮的控制
@@ -297,20 +297,18 @@ children 内容页
                 hashHistory.push(`/${e.key}`) 跳转
 
 ## login页面
-QueuiAnim 动画
-Logo      动画
-Spin      加载loadinng
-Form      表单 :
+### QueuiAnim 动画
+### Logo      动画
+### Spin      加载loadinng
+### Form      表单 :
                this.props.form.validateFields 验证
                getFieldDecorator	用于和表单进行双向绑定
-input( icon(svg) )
-componentWillMount() {
+### input( icon(svg) )
+### componentWillMount() {
     this.props.dispatch(clearGformCache2({}))
 } dom加载后清空gForm2.0缓存
-@reg 正则 在webpack.config.js 定义
-hasFeedback 反馈图标
-调登录接口-》侧边栏接口-》用户信息接口
-hashHistory.push 跳转
+### @reg 正则 在webpack.config.js 定义
+### hasFeedback 反馈图标
+### 调登录接口-》侧边栏接口-》用户信息接口
+### hashHistory.push 跳转
 
-## echarts页面
-## editor页面
